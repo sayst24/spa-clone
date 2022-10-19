@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+  text-decoration: none;
+  background-color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin: 5px 3px;
+}
+
+#main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 180px;
+  z-index: -200;
+}
+
+.heading {
+  background: url(../images/pages/header-blue.jpg) no-repeat center;
+  width: 95vw;
+  height: 200px;
+  margin: 5px auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading h1 {
+  font-size: 110px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(30,30,30);
+  letter-spacing: 2px;
+  transform: scaleY(0.8);
+}
+
+/*ABOUT PAGES*/
+
+.paragraphs {
+  margin: 30px 0 60px;
+}
+
+.paragraphs p, .content p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: rgb(110,110,110);
+  font-size: 18px;
+  line-height: 160%;
+  width: 92%;
+  margin: 20px auto;
+}
+
+.paragraphs a {
+  color: rgb(0,102,166);
+}
+
+/*Product and WR*/
+.content  {
+  margin: 0 auto 50px;
+  width:100%;
+  font-size: 0;
+}
+
+.content h1 {
+  color: rgb(0,102,166);
+  font-size: 50px;
+  line-height: 50px;
+  transform: scaleY(0.8);
+  font-weight: 900;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.content h3, .content h3 a {
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+  transform: scaleY(0.8);
+  margin: 0 auto;
+  width: 95%;
+}
+.content p {
+  width: 95%;
+}
+.content p:nth-child(4){
+  margin: 10px auto 20px;
+}
+
+table {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(110,110,110);
+  border-collapse: separate;
+  width: 95%;
+  margin: 0 auto 0;
+  text-align: center;
+}
+td{
+  border: 1px solid black;
+  font-weight: 300;
+}
+th {
+  border: 1px solid black;
+  padding: 5px 20px;
+}
+.address {
+  padding: 2px 10px;
+}
+
+@media (max-width:1060px){
+  #main-content {
+    top: 107px;
+  }
+  #main {
+    transition: left 0.4s;
+    height: 1000%;
+  }
+}

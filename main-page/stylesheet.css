@@ -1,0 +1,382 @@
+/*html, body {
+        height: 100%;
+        margin: 0;
+        padding:0;
+}*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+  text-decoration: none;
+  background-color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin: 5px 3px;
+}
+
+#main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 180px;
+  z-index: -200;
+}
+
+/** slideshow **/
+
+.slide-show-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.slide-show {
+  display: flex;
+  width: 100%;
+  height: auto;
+  transition: none;
+}
+.slide-show-images {
+  width: 100%;
+  height: auto;
+}
+.slide-show-dots {
+  text-align: center;
+  cursor: context-menu;
+}
+.dots {
+  cursor: pointer;
+  height: 11px;
+  width: 11px;
+  color: black;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #9E9E9E;
+  margin: 20px 5px 0;
+}
+.dots:hover, .this-dot {
+  background-color: #191919
+}
+
+
+/*our-products*/
+.our-products {
+  display: block;
+  position: relative;
+}
+
+.our-products h1 {
+  font-size: 100px;
+  color:#0B3F8B;
+  text-align: center;
+  background: url(../images/main/gray-line.png) no-repeat bottom center;
+  margin: 30px 0;
+}
+
+.our-products p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(113,109,103);
+  width: 90vw;
+  margin: 30px auto;
+}
+
+.product-list {
+  display: flex;
+  width: 90vw;
+  flex-direction: row;
+  margin: auto;
+}
+
+.product-items {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+.product-name {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: 8vw;
+}
+
+.product-name h2 {
+  margin-top: 20px;
+  color: rgb(0,102,166);
+  font-size: 3.5vw;
+  font-weight: 900;
+  transform: scaleY(0.6);
+  text-align: center;
+}
+
+.details-container h3 {
+  color: #F7931D;
+  text-align: center;
+  font-size: 3vw;
+  transform: scaleY(0.6);
+}
+
+#impact-ratchet h2, #die h2 {
+  transform: scaleY(0.6) translateY(-16%);
+}
+
+/*Video Section*/
+
+.video-sec {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: auto;
+  background-image: url(../images/main/video-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.video-sec video {
+  margin-top: 20px;
+}
+
+
+.video-text {
+  width: 47%;
+  height: auto;
+  color: white;
+  margin: 0;
+}
+
+.video-text h2 {
+  font-size: 45px;
+  letter-spacing: 1px;
+  transform: scaleY(0.8);
+  margin-bottom:0;
+}
+
+.video-text p {
+  margin: 15px 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+
+/*Why choose us */
+.why-choose-us h1 {
+  font-size: 100px;
+  color:#0B3F8B;
+  text-align: center;
+  background: url(../images/main/gray-line.png) no-repeat bottom center;
+  margin: 30px 0;
+
+}
+
+.reasons {
+  display: flex;
+  width: 95vw;
+  flex-direction: row;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+.rsn {
+  width: 25%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.image img {
+  max-width: 40%;
+  height: auto;
+}
+
+.rsn h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: rgb(0,102,166);
+  font-size: 5vw;
+  font-weight: 900;
+  transform: scaleY(0.6);
+  text-align: center;
+}
+
+.rsn p {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: rgb(113,109,103);
+  width: 90%;
+  text-align: center;
+  letter-spacing: .1px;
+}
+
+/** The SP AIR brand **/
+.brand {
+  background-color: rgb(11, 63, 139);
+  padding: 0px 0px 0px 50px;
+  display: flex;
+}
+
+.brand-text {
+  padding-top: 80px;
+  color: white;
+  width: 50%;
+  margin: 0;
+}
+
+.brand h2 {
+  font-size: 80px;
+  text-shadow: 1px 1px 10px black;
+  margin: 0;
+}
+
+.brand p {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  background-color: #F7931D;
+  width: 275px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: background-color 0.5s;
+}
+
+.learn-more h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.learn-more:hover {
+  background-color: black;
+}
+
+.brand img {
+  float: right;
+  width: 50%;
+  margin: 0;
+}
+
+@media (max-width:770px){
+  .product-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-items {
+    width: 40%;
+  }
+  .product-name {
+    height: 10vw;
+  }
+  .product-name h2 {
+    font-size: 8vw;
+  }
+  .details-container h3 {
+    font-size: 5vw;
+  }
+  #impact-ratchet, #die {
+    height:15vw;
+  }
+  .reasons {
+    flex-direction: column;
+  }
+  .rsn {
+    width: 100%;
+    margin: 10vh 0;
+  }
+  .image {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .rsn h2 {
+    font-size: 10vw;
+    margin: 0;
+  }
+  .rsn p {
+    font-size: 4vw;
+  }
+  .brand{
+    flex-direction: column;
+  }
+  .brand-text {
+    width: 100%;
+  }
+  .brand-text p {
+    margin-right: 50px;
+  }
+  .brand img {
+    width: 100%;
+    box-shadow: -5px -5px 50px 50px rgb(11, 63, 139) inset;
+  }
+}
+
+
+@media (max-width:1000px){
+
+}
+
+
+@media (max-width:1060px){
+  #main-content {
+    top: 107px;
+  }
+  #main {
+    transition: left 0.4s;
+    height: 1000%;
+  }
+  .video-sec {
+    flex-direction: column;
+    /*height: 700px;*/
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-sec video, .video-text {
+    width: 80%;
+  }
+  .video-text h2 {
+    font-size: 45px;
+    text-align: center;
+  }
+}
